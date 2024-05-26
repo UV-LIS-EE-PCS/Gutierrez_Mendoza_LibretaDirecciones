@@ -11,6 +11,16 @@ public class AddressBookAplication {
 
             do{
 
+                menu.displayMenu();
+                char option = in.next().toLowerCase().charAt(0);
+                switch (option) {
+                    case 'a':// cargar archivo
+                        System.out.println("Ingresa el nombre del archivo:");
+                        String filename = in.nextLine();
+                        addressBook.readFromATextFile(filename);
+                        break;
+
+                }
 
         }while (true);
 
