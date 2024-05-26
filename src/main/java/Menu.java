@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class Menu {
+
+    private Scanner in = new Scanner(System.in);
+
     public void displayMenu() {
         System.out.println("====================================");
         System.out.println("Hola! Elige una opción del menú:");
