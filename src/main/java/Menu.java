@@ -2,7 +2,17 @@ import java.util.Scanner;
 
 public class Menu {
 
-    private Scanner in = new Scanner(System.in);
+    private Scanner in;
+
+    // Constructor por defecto
+    public Menu() {
+        this.in = new Scanner(System.in);
+    }
+
+    // Constructor para pruebas unitarias
+    public Menu(Scanner in) {
+        this.in = in;
+    }
 
     public void displayMenu() {
         System.out.println("====================================");
@@ -40,7 +50,7 @@ public class Menu {
         String state = in.nextLine();
         System.out.println("CP:");
         int postalCode = in.nextInt();
-        in.nextLine();
+        in.nextLine(); // Consumir la nueva línea
         System.out.println("Email:");
         String email = in.nextLine();
         System.out.println("Telefono:");
