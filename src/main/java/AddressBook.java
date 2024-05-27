@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -18,14 +17,15 @@ public class AddressBook {
         return instance;
     }
 
+    // Método adicional para reiniciar la instancia en pruebas
+    public static void resetInstance() {
+        instance = null;
+    }
+
     public void showContactsList() {
-        // TODO: Order by last name
         if (entriesList.isEmpty()) System.out.println("La lista esta vacia:(");
         else {
-            // Definir el comparador
             Comparator<AddressEntry> byLastName = Comparator.comparing(AddressEntry::getLastName);
-
-            // Ordenar la lista
             entriesList.sort(byLastName);
             for (AddressEntry entry : entriesList) {
                 System.out.println((entriesList.indexOf(entry) + 1) + ". " + entry.toString() + "\n");
@@ -92,3 +92,4 @@ public class AddressBook {
         }
     }
 }
+
