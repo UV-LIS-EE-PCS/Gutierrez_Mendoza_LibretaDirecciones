@@ -59,6 +59,10 @@
         </tbody>
     </table>
 
+### Consideraciones de eficiencia:
+
+- La clase AddressBook utiliza una estructura de datos ArrayList para almacenar contactos. Esto proporciona operaciones de inserción y eliminación eficientes (O(1) complejidad de tiempo promedio).
+- El método findAddressEntry utiliza una búsqueda lineal a través del ArrayList para encontrar contactos coincidentes. Si bien no es el más eficiente para conjuntos de datos grandes, es adecuado para listas de contactos pequeñas a medianas.
 
 ## SECCIÓN B URL DE JAVADOC 
 
