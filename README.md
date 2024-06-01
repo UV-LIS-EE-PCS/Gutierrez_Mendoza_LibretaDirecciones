@@ -75,7 +75,27 @@
 
 ### EVIDENCIA 1: 
 
+1: Leer entradas del archivo de datos seguidas de Mostrar listado. El archivo de datos debe contener un mínimo de 2 direcciones. Incluir captura de pantalla de salida y también mostrar el contenido correspondiente
+del archivo de datos
+
+#### Archivo de Datos.txt
+![image](https://github.com/yuyo272003/Gutierrez_Mendoza_LibretaDirecciones/assets/160281992/9a8f4b21-f566-4b27-8c4d-d46b5b17de0f)
+
+#### Selección de Leer Archivo y Lectura del Archivo 
+![image](https://github.com/yuyo272003/Gutierrez_Mendoza_LibretaDirecciones/assets/160281992/37ee8963-c3cc-4821-ad49-e2fac8b46e25)
+
+#### Introducción de Ruta y Cargado de datos
+
+![image](https://github.com/yuyo272003/Gutierrez_Mendoza_LibretaDirecciones/assets/160281992/7ccfdaa7-358e-4c80-b55c-c257db3647ba)
+
+#### Muestra de los datos 
+
+![image](https://github.com/yuyo272003/Gutierrez_Mendoza_LibretaDirecciones/assets/160281992/3027be8a-dc08-4488-8112-2ad942e5aec9)
+
+
 ### EVIDENCIA 2:
+
+
 
 ### EVIDENCIA 3: 
 
