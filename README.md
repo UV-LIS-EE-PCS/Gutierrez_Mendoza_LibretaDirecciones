@@ -65,6 +65,9 @@
 - El método findAddressEntry utiliza una búsqueda lineal a través del ArrayList para encontrar contactos coincidentes. Si bien no es el más eficiente para conjuntos de datos grandes, es adecuado para listas de contactos pequeñas a medianas.
 
 ## SECCIÓN B URL DE JAVADOC 
+### Link del JavaDoc del Proyecto : [Link](https://tubular-scone-7b2e20.netlify.app/package-summary.html)
+
+![image](https://github.com/yuyo272003/Gutierrez_Mendoza_LibretaDirecciones/assets/160281992/b7f0c566-be25-4888-ab05-f557172f8049)
 
 ## SECCIÓN C UML/DISEÑO 
 ### Link de Diagrama de Clases UML: [Link](https://lucid.app/lucidchart/0ddc8334-ac59-47c3-a06d-8f8159e7ee1a/edit?viewport_loc=-1928%2C-806%2C3239%2C1583%2C0_0&invitationId=inv_d9764257-d67f-4924-9426-6d64288274b4)
