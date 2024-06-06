@@ -1,29 +1,33 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
+/**
+ * Main class for the Address Book application.
+ * Provides a menu-driven interface for managing address book entries.
+ * @author Julio Gutiérrez Mendoza
+ */ 
 public class AddressBookAplication {
-  
- public class AddressBookApplication {
+
+    public class AddressBookApplication {
+
         public static void main(String[] args) {
             Menu menu = new Menu();
             try (Scanner in = new Scanner(System.in)) {
-                AddressBook addressBook = AddressBook.getInstance();a
+                AddressBook addressBook = AddressBook.getInstance();
 
                 do {
-
                     menu.displayMenu();
                     char option = in.next().toLowerCase().charAt(0);
                     switch (option) {
-                        case 'a':// cargar archivo
+                        case 'a': // Load from file
                             in.nextLine();
                             System.out.println("Ingresa el nombre del archivo:");
                             String filename = in.nextLine();
                             addressBook.readFromATextFile(filename);
                             break;
-                        case 'b': // agregar
+                        case 'b': // Add entry
                             menu.add();
                             break;
-                        case 'c': // eliminar
+                        case 'c': // Delete entry
                             in.nextLine();
                             System.out.println("Ingresa el apellido completo del contacto a eliminar");
                             String lastname = in.nextLine();
@@ -40,10 +44,10 @@ public class AddressBookAplication {
                             if (choice == 'y') {
                                 addressBook.deleteAddressEntry(lastname);
                             } else if (choice != 'n') {
-                                System.out.println("Opcion incorrecta");
+                                System.out.println("Opción incorrecta");
                             }
                             break;
-                        case 'd': // buscar
+                        case 'd': // Search entry
                             in.nextLine();
                             System.out.println("Ingrese apellido completo o primeras letras:");
                             String startOfLastName = in.nextLine();
@@ -56,19 +60,17 @@ public class AddressBookAplication {
                             }
                             addressBook.showContactsFound(contactsFound);
                             break;
-                        case 'e': // mostrar lista
+                        case 'e': // Show contacts list
                             addressBook.showContactsList();
                             break;
-                        case 'f': // salir
+                        case 'f': // Exit
                             return;
                         default:
-                            System.out.println("Opcion erronea, intenta de nuevo");
-
+                            System.out.println("Opción errónea, intenta de nuevo");
                     }
 
                 } while (true);
             }
-
         }
     }
 }

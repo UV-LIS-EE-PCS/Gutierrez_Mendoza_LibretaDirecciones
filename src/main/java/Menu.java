@@ -1,19 +1,35 @@
 import java.util.Scanner;
 
+/**
+ * Class representing a menu for managing an address book.
+ * Provides options to load, add, delete, search, and display contacts.
+ * @author Julio Gutiérrez Mendoza
+ */
 public class Menu {
 
     private Scanner in;
 
-    // Constructor por defecto
+    /**
+     * Default constructor for Menu.
+     * Initializes a new Scanner for user input.
+     */
     public Menu() {
         this.in = new Scanner(System.in);
     }
 
-    // Constructor para pruebas unitarias
+    /**
+     * Constructor for Menu with a specified Scanner.
+     * Useful for unit testing with a predefined input stream.
+     *
+     * @param in the Scanner to use for user input.
+     */
     public Menu(Scanner in) {
         this.in = in;
     }
 
+    /**
+     * Displays the menu options to the user.
+     */
     public void displayMenu() {
         System.out.println("====================================");
         System.out.println("Hola! Elige una opción del menú:");
@@ -26,6 +42,10 @@ public class Menu {
         System.out.println("====================================");
     }
 
+    /**
+     * Prompts the user to add a new address entry.
+     * Handles user input and adds the new entry to the address book.
+     */
     public void add() {
         try {
             AddressEntry newEntry = requestContactData();
@@ -37,6 +57,13 @@ public class Menu {
         }
     }
 
+    /**
+     * Requests contact data from the user.
+     * Prompts the user for each field of the address entry.
+     *
+     * @return the newly created AddressEntry with user-provided data.
+     * @throws Exception if any of the fields are left empty.
+     */
     private AddressEntry requestContactData() throws Exception {
         System.out.println("Nombre:");
         String name = in.nextLine();
@@ -64,6 +91,10 @@ public class Menu {
         return new AddressEntry(name, lastName, street, city, state, postalCode, email, phone);
     }
 
+    /**
+     * Placeholder method for deleting an address entry.
+     * Not yet implemented.
+     */
     public void deleteAddressEntry() {
         // TODO: Implement or delete this method
     }
